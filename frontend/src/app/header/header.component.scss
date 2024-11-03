@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #CED2DA;
+
+    .logo {
+        font-weight: bold;
+        font-size: 24px;
+        color: #388e3c;
+    }
+
+    .menu {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+
+        .menu-item {
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+
+            &:hover {
+                color: #388e3c;
+                background-color: #f0f0f0;
+            }
+
+            &.selected {
+                color: #fff;
+                background-color: #388e3c;
+                padding: 15px 10px;
+                border-radius: 5px;
+            }
+
+            .menu-border {
+                &.selected {
+                    padding-bottom: 12px;
+                    border-bottom: solid red;
+                }
+            }
+        }
+    }
+
+    .login-btn {
+        display: flex;
+        align-items: center;
+        background-color: #388e3c;
+        color: #fff;
+        font-weight: bold;
+        padding: 4px 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+            background: var(--Button-button-background-primary-default, #1B8354);
+        }
+    }
+}
