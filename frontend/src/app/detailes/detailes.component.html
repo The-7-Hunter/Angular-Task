@@ -1,0 +1,21 @@
+<div class="about-page-container">
+
+
+    <div class="content-section">
+        <h1 class="section-title">عن الصفحة</h1>
+        <p class="section-description">
+            لوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل الوثيقة أو الخط دون الاعتماد على محتوى معنوي.
+        </p>
+
+        <div class="info-list">
+            <div class="info-item" *ngFor="let item of infoItems;">
+                <img [src]="'assets/' + item.icon" alt="Item Icon" class="item-icon" />
+                <p class="item-title">{{ item.title }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-section">
+        <img src="assets/dataVisualization.gif" alt="Graphs and Data Visualization" />
+    </div>
+</div>
