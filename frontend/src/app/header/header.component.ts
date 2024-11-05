@@ -13,6 +13,12 @@ export class HeaderComponent {
   constructor(private router: Router) {
 
   }
+  selectedItem = 'home'
+
+  handleSelection(label: string) {
+    this.selectedItem = label;
+
+  }
 
   onLoginClick() {
     this.router.navigate(['/login'])

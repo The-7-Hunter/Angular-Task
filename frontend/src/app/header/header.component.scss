@@ -11,10 +11,6 @@
         font-weight: bold;
         font-size: 24px;
         color: #388e3c;
-
-        &:hover {
-            background-color: black;
-        }
     }
 
     .menu {
@@ -25,28 +21,24 @@
         .menu-item {
             font-weight: bold;
             color: #333;
-            text-decoration: none;
+            padding: 15px 20px;
 
             &:hover {
-                color: #388e3c;
                 background-color: #f0f0f0;
                 cursor: pointer;
-
+                border-bottom: 5px solid gray;
             }
 
-            // &.selected {
-            //     color: #fff;
-            //     background-color: #388e3c;
-            //     padding: 15px 10px;
-            //     border-radius: 5px;
-            // }
+            &.selected {
+                color: #fff;
+                background-color: #388e3c;
+                padding: 15px 20px;
+                border-bottom: 5px solid #54C08A;
+                border-radius: 5px;
 
-            // .menu-border {
-            //     &.selected {
-            //         padding-bottom: 12px;
-            //         border-bottom: solid red;
-            //     }
-            // }
+
+
+            }
         }
     }
 
@@ -65,9 +57,5 @@
 
     .icon {
         color: #fff;
-    }
-
-    .login-btn:hover {
-        background-color: black;
     }
 }

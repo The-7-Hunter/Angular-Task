@@ -1,15 +1,17 @@
 <div class="header">
     <div class="logo">Logo</div>
     <div class="menu">
-        <a href="#" class="menu-item selected">
+        <a (click)="handleSelection('home')" class="menu-item" [class.selected]="selectedItem == 'home'">
             <span class="menu-border">
                 الرئيسية
             </span>
         </a>
-        <a href="#" class="menu-item">عن المشروع</a>
-        <a href="#" class="menu-item">ميزات</a>
-        <a href="#" class="menu-item">
-            <span class="menu-border">
+        <a (click)="handleSelection('about')" [class.selected]="selectedItem == 'about'" class="menu-item">عن
+            المشروع</a>
+        <a (click)="handleSelection('features')" [class.selected]="selectedItem == 'features'"
+            class="menu-item">ميزات</a>
+        <a (click)="handleSelection('contacts')" [class.selected]="selectedItem == 'contacts'" class="menu-item">
+            <span [class.selected]="selectedItem == 'home'" class="menu-border">
                 تواصل معنا
             </span>
         </a>
