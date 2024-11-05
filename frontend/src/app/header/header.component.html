@@ -1,8 +1,6 @@
 <div class="header">
     <div class="logo">Logo</div>
     <div class="menu">
-
-
         <a href="#" class="menu-item selected">
             <span class="menu-border">
                 الرئيسية
@@ -17,8 +15,10 @@
         </a>
 
     </div>
-    <button class="login-btn">
+    <button (click)="onLoginClick()" class="login-btn">
+        <span>
+            تسجيل دخول
+        </span>
         <img src="assets/rightArrow.svg" alt="Icon" class="icon">
-        تسجيل دخول
     </button>
 </div>
