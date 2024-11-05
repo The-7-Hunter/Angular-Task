@@ -1,0 +1,29 @@
+.wrapper {
+    background-color: #074d31;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.box {
+    flex: 1;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    gap: 10px;
+    color: #e0e0e0;
+}
+
+.divider {
+    margin: 5px 0;
+    border-bottom: 1px solid #FFFFFF4D;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    color: #fff;
+}

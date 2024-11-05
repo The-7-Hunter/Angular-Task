@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    height: 100px;
     background-color: #fff;
     border-bottom: 1px solid #CED2DA;
 
@@ -10,6 +11,10 @@
         font-weight: bold;
         font-size: 24px;
         color: #388e3c;
+
+        &:hover {
+            background-color: black;
+        }
     }
 
     .menu {
@@ -25,21 +30,23 @@
             &:hover {
                 color: #388e3c;
                 background-color: #f0f0f0;
+                cursor: pointer;
+
             }
 
-            &.selected {
-                color: #fff;
-                background-color: #388e3c;
-                padding: 15px 10px;
-                border-radius: 5px;
-            }
+            // &.selected {
+            //     color: #fff;
+            //     background-color: #388e3c;
+            //     padding: 15px 10px;
+            //     border-radius: 5px;
+            // }
 
-            .menu-border {
-                &.selected {
-                    padding-bottom: 12px;
-                    border-bottom: solid red;
-                }
-            }
+            // .menu-border {
+            //     &.selected {
+            //         padding-bottom: 12px;
+            //         border-bottom: solid red;
+            //     }
+            // }
         }
     }
 
@@ -47,15 +54,20 @@
         display: flex;
         align-items: center;
         background-color: #388e3c;
-        color: #fff;
+        color: white;
         font-weight: bold;
-        padding: 4px 16px;
+        font-size: 16px;
+        padding: 10px 20px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
+    }
 
-        &:hover {
-            background: var(--Button-button-background-primary-default, #1B8354);
-        }
+    .icon {
+        color: #fff;
+    }
+
+    .login-btn:hover {
+        background-color: black;
     }
 }

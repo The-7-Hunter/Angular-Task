@@ -1,0 +1,41 @@
+<div class="login-container">
+    <div class="login-background">
+        <div class="logo">LOGO</div>
+        <div class="background-pattern"></div>
+    </div>
+
+    <div class="login-section">
+        <div class="row">
+            <div>
+                <button (click)="onBackBtnClick()" class="back-btn">
+                    <img src="assets/backArrow.svg" alt="back arrow">
+                </button>
+            </div>
+            <div>
+                <h2 class="title">تسجيل دخول</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="idNumber">رقم الهوية</label>
+                    <input type="text" id="idNumber" placeholder="ادخل رقم الهوية الخاصة بك" class="form-control"
+                        name="idNumber" required />
+                </div>
+                <div class="form-group">
+                    <label for="password">كلمة المرور</label>
+                    <input type="password" id="password" placeholder="********" class="form-control" name="password"
+                        required />
+                </div>
+
+                <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
+
+                <button (click)="onSubmit()" type="submit" class="submit-button">
+                    تسجيل دخول
+                    <img src="assets/rightArrow.svg" alt="arrow">
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="quick-actions">
+    <h2 class="quick-actions-title">
+        <!-- <span class="icon"></span> -->
+        <span>الوصول السريع</span>
+    </h2>
+    <div class="card-container">
+        <div class="card" *ngFor="let item of items;">
+            <div *ngIf="item.icon">
+                <div class="card-icon">
+                    <img [src]="item.icon" alt="Icon" />
+                </div>
+            </div>
+            <div *ngIf="item.text">
+                <div class="card-text">
+                    Logo </div>
+            </div>
+            <div class="card-title">لوحة التحكم</div>
+            <div class="card-details">
+                <div>
+                    التفاصيل
+                </div>
+                <!-- <button>
+                    <img src="assets/rightArrow.svg" alt="right arrow" />
+                </button> -->
+            </div>
+        </div>
+    </div>
+</div>
