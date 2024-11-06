@@ -4,15 +4,15 @@
     </div>
 
     <div class="nav-links">
-        <a class="nav-link active">
+        <a (click)="handleSelection('home')" [class.active]="selectedItem == 'home'" class="nav-link">
             <img src="assets/home.svg" alt="Home Icon" class="icon" />
             الرئيسية
         </a>
-        <a class="nav-link">
-            <img src="assets/reports.svg" alt="Home Icon" class="icon" />
+        <a (click)="handleSelection('reports')" [class.active]="selectedItem == 'reports'" class="nav-link">
+            <img src="assets/reports.svg" alt="reports Icon" class="icon" />
             التقارير</a>
-        <a class="nav-link">
-            <img src="assets/dashboard.svg" alt="Home Icon" class="icon" />
+        <a (click)="handleSelection('dashboard')" [class.active]="selectedItem == 'dashboard'" class="nav-link">
+            <img src="assets/dashboard.svg" alt="dashboard Icon" class="icon" />
             لوحة التحكم</a>
     </div>
 

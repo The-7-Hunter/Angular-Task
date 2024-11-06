@@ -11,6 +11,13 @@ import { Router } from '@angular/router';
 export class UserHeaderComponent {
   constructor(private router: Router) { }
 
+  selectedItem = 'home'
+
+  handleSelection(label: string) {
+    this.selectedItem = label;
+
+  }
+
   onLogoutClick() {
     this.router.navigate(['/'])
   }
